@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 30px 15px 30px;
+  border-top: 2px solid black;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer__socials {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+}
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.footer__name {
+  font-weight: 800;
+}

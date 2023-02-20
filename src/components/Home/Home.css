@@ -1,0 +1,8 @@
+.home {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+.home__tiger {
+  max-width: 50%;
+}
