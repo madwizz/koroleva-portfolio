@@ -5,4 +5,8 @@
 }
 .home__tiger {
   max-width: 50%;
+  transition: 1.0s all ease-in-out;
+}
+.home__tiger:hover {
+  transform: scale(1.2);
 }

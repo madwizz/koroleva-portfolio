@@ -10,7 +10,7 @@
 }
 
 .about__photo {
-  max-width: 500px;
+  max-width: 520px;
 }
 
 .about__paragraphs {
@@ -21,9 +21,9 @@
 }
 
 .about__p-one {
-  font-size: 50px;
+  font-size: 46px;
   margin: 0;
 }
 .about__p-two {
-  font-size: 16px;
+  font-size: 20px;
 }
