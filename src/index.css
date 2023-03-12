@@ -1,0 +1,12 @@
+body {
+  background-color: white;
+  transition: ease 500ms;
+}
+
+.bgcolor {
+  background-color: black;
+}
+
+.textcolor {
+  color: white;
+}

@@ -1,0 +1,29 @@
+.toggle {
+  background-color: #fff;
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: #C96FFB 0px 5px 15px;;
+}
+
+.toggle_night {
+  box-shadow: #2C43FC 0px 5px 15px;
+}
+
+.toggle-button {
+  background-color: #2C43FC;
+  height: 16px;
+  width: 15px;
+  border-radius: 10px;
+  top: 2px;
+  left: 5px;
+  position: absolute;
+  transition: all 350ms;
+}
+
+.button-move {
+  background-color: #C96FFB;
+  left: 20px;
+}
