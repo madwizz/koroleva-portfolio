@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import * as React from 'react'
+const { useEffect, useState } = React;
 import './Footer.css'
 
-const Footer = () => {
+const Footer: React.FC<{}> = () => {
 
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  const [currentYear, setCurrentYear] = useState<number>(new Date().getFullYear());
 
   useEffect(() => {
     const interval = setInterval(() => {

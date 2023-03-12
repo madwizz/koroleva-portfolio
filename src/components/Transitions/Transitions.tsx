@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 
 import { motion } from 'framer-motion'
 
@@ -8,7 +8,7 @@ const animationConfiguration = {
   exit: { opacity: 0 },
 }
 
-const Transitions = ({ children }) => {
+const Transitions: React.FC<{}> = ({ children }) => {
   return (
       <motion.div
           variants={animationConfiguration}

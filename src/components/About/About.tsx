@@ -1,11 +1,11 @@
-import React from 'react'
+import * as React from 'react'
 import './About.css'
 
-import photo from '../../img/photo.png' 
+import photo from '../../img/photo.png'
 import Publications from '../Publications/Publications'
 import Transitions from '../Transitions/Transitions'
 
-const About = () => {
+const About: React.FC<{}> = () => {
   return (
     <>
       <Transitions>

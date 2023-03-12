@@ -1,8 +1,8 @@
-import React from 'react'
+import * as React from 'react'
 
 import './Publications.css'
 
-const Publications = () => {
+const Publications: React.FC<{}> = () => {
   return (
     <div className='publications'>
       <div className='publications__wrap'>

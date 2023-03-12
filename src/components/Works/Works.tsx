@@ -1,5 +1,7 @@
-import React from 'react'
+import * as React from 'react'
+
 import './Works.css'
+
 import bellFlower from '../../img/bell-flower.webp'
 import blackCat from '../../img/black-cat.webp'
 import candle from '../../img/candle.webp'
@@ -26,7 +28,7 @@ import swan from '../../img/swan.webp'
 import trade from '../../img/trade.webp'
 import wine from '../../img/wine.webp'
 
-const Works = () => {
+const Works: React.FC<{}> = () => {
   return (
     <div className='works'>
       <div className='works__container'>
@@ -60,4 +62,4 @@ const Works = () => {
   )
 }
 
-export default Works;
+export default Works
