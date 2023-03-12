@@ -1,6 +1,9 @@
 import * as React from 'react'
+const { useState } = React
 
 import './Works.css'
+
+import WorkPopup from '../WorkPopup/WorkPopup'
 
 import bellFlower from '../../img/bell-flower.webp'
 import blackCat from '../../img/black-cat.webp'
@@ -29,34 +32,46 @@ import trade from '../../img/trade.webp'
 import wine from '../../img/wine.webp'
 
 const Works: React.FC<{}> = () => {
+
+  const [selectedImage, setSelectedImage] = useState('');
+
+  const handleImageClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
+    setSelectedImage(event.currentTarget.currentSrc);
+  }
+
   return (
     <div className='works'>
+      {selectedImage && 
+      <WorkPopup 
+        imageSrc={selectedImage} 
+        onClose={() => setSelectedImage('')}
+      />}
       <div className='works__container'>
-        <img className='works__item' src={bellFlower} alt='' />
-        <img className='works__item' src={blackCat} alt='' />
-        <img className='works__item' src={candle} alt='' />
-        <img className='works__item' src={catBeer} alt='' />
-        <img className='works__item' src={carRider} alt='' />
-        <img className='works__item' src={cat} alt='' />
-        <img className='works__item' src={cheetah} alt='' />
-        <img className='works__item' src={cyclops} alt='' />
-        <img className='works__item' src={dove} alt='' />
-        <img className='works__item' src={eye} alt='' />
-        <img className='works__item' src={flower} alt='' />
-        <img className='works__item' src={eyes} alt='' />
-        <img className='works__item' src={milkshake} alt='' />
-        <img className='works__item' src={nightTiger} alt='' />
-        <img className='works__item' src={peacock} alt='' />
-        <img className='works__item' src={pizza} alt='' />
-        <img className='works__item' src={reflection} alt='' />
-        <img className='works__item' src={rgtm} alt='' />
-        <img className='works__item' src={snakeEating} alt='' />
-        <img className='works__item' src={snakeEatingBeer} alt='' />
-        <img className='works__item' src={star} alt='' />
-        <img className='works__item' src={sunbathing} alt='' />
-        <img className='works__item' src={swan} alt='' />
-        <img className='works__item' src={trade} alt='' />
-        <img className='works__item' src={wine} alt='' />
+        <img className='works__item' src={bellFlower} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={blackCat} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={candle} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={catBeer} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={carRider} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={cat} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={cheetah} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={cyclops} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={dove} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={eye} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={flower} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={eyes} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={milkshake} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={nightTiger} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={peacock} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={pizza} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={reflection} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={rgtm} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={snakeEating} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={snakeEatingBeer} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={star} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={sunbathing} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={swan} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={trade} alt='' onClick={handleImageClick} />
+        <img className='works__item' src={wine} alt='' onClick={handleImageClick} />
       </div>
     </div>
   )

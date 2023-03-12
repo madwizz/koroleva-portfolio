@@ -10,9 +10,10 @@
 .works__item {
   width: 100% !important;
   height: auto !important;
-  transition: 1.0s all ease-in-out
+  /* transition: 1.0s all ease-in-out; */
 }
 
 .works__item:hover {
-  transform: scale(1.5);
+  /* transform: scale(1.5); */
+  cursor: pointer;
 }
